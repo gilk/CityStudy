@@ -2,7 +2,7 @@ Still working out the kinks but for now it works in three stages
 
 run point_generator.py to generate a list of random points in a city
 
-run transit_loop.py to run the puts through google maps api directions
+run transit_loop.py to run the points through google maps api directions
 
 and then plotting\ scripts/test_plot.r will create a simple plot
 
