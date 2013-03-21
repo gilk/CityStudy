@@ -20,10 +20,11 @@ def throwpoint(city='London',country='UK',centre=[51.507222,-0.1275],area=1570):
 #		print url
 		query=json.load(urllib.urlopen(url))
 		#print query
+		
 		if(query['status']=='OK'):
 			for address in query['results']:
 				if(address['formatted_address']==city+', '+country): inCity=True
-		return newp
+	return newp
 #city='Paris'
 #centre=[51.507222,-0.1275]
 #print centre
@@ -32,5 +33,5 @@ def throwpoint(city='London',country='UK',centre=[51.507222,-0.1275],area=1570):
 #throwpoint(city,centre,area)
 
 #print 'without arguments'
-#for x in range(1,10):
-#	print x, throwpoint()
+for x in range(1,5):
+	print x, throwpoint()
